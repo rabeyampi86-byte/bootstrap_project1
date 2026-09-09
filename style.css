@@ -199,12 +199,13 @@ h2 { margin: 0; font-size: clamp(2.5rem, 4.5vw, 4.5rem); font-weight: 500; line-
 .payment-option strong, .payment-option small { display: block; }
 .payment-option strong { font-size: .84rem; }
 .payment-option small { margin-top: .2rem; color: var(--muted); font-size: .68rem; }
-.payment-icon { display: grid; width: 42px; height: 42px; flex: 0 0 42px; place-items: center; border-radius: 10px; color: #fff; font-size: .65rem; font-weight: 700; letter-spacing: .02em; }
-.payment-icon-bkash { background: #e2136e; }
-.payment-icon-nagad { background: #f58220; font-size: 1.25rem; }
-.payment-icon-visa { background: #1a4b9b; font-size: .57rem; font-style: italic; }
-.payment-icon-mastercard { background: linear-gradient(90deg, #eb001b 0 50%, #f79e1b 50%); }
-.payment-icon-bank { color: var(--ink); background: var(--sand); }
+.payment-icon { display: grid; width: 42px; height: 42px; flex: 0 0 42px; place-items: center; overflow: hidden; border-radius: 10px; color: #fff; background: #fff; font-size: .65rem; font-weight: 700; letter-spacing: .02em; }
+.payment-icon img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.payment-icon-bkash { background: #fff; }
+.payment-icon-nagad { background: #fff; }
+.payment-icon-visa { background: #fff; }
+.payment-icon-mastercard { background: #fff; }
+.payment-icon-bank { color: var(--ink); background: #fff; }
 .payment-submit { margin-top: 1.5rem; }
 body.payment-open { overflow: hidden; }
 .partner-ict, .partner-prothom, .partner-future, .partner-emk { display: inline-flex; min-height: 42px; align-items: center; padding: .55rem .8rem; border: 1px solid #d8dfd9; color: #52645d; font-family: 'DM Sans', sans-serif; font-size: .78rem; font-style: normal; font-weight: 700; letter-spacing: .03em; }
